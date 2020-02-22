@@ -1,0 +1,254 @@
+@charset 'UTF-8';
+@media screen and (max-width: 640px){
+/*基本設定*/
+  body{
+  line-height: 1.5;
+  color: #222;
+  font-size: 0.85em;
+}
+main p{
+  font-size: 1.1em;
+}
+  img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+  a{
+  text-decoration: underline;
+  color: #222;
+}
+  .hidden-sp{
+  display: none !important;
+}
+  .mod-btn{
+  margin: 40px auto;
+  text-align: center;
+  font-size: 1.1em;
+  width: 80%;
+}
+.mod-btn a{
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 16px 65px;
+  text-decoration: none;
+  color: #1bb19a;
+  border: solid 1px #1bb19a;
+  border-radius: 4px;
+}
+/*ヘッダー*/
+  #headerTop{
+    background-color: #9b8c7d;
+  }
+  #logo{
+  width: 227px;
+  padding: 20px 0 20px 10px;
+}
+  #iconMap{
+    display:none;
+  }
+  .navbar-collapse{
+  position: absolute;
+  z-index: 100;
+  top: 87px;
+  left: 0;
+  display: none;
+  float: none;
+  width: 100%;
+  background: #d7d7c8;
+  opacity:0.9;
+  color:#fff;
+}
+.navbar-collapse li {
+  margin: 0 10px;
+  font-size: 14px;
+}
+.navbar-collapse li a{
+  display: block;
+  padding: 15px 0;
+  color: #fff;
+  text-decoration: none;
+  border-top: 1px solid #fff;
+}
+.navbar-collapse li:first-child a{
+  border-top: none;
+}
+#menu-input{
+  display:none;
+}
+#menu-icon{
+  width: 54px;
+  height: 42px;
+  position: absolute;
+  top:20px;
+  right: 10px;
+  background-image: url(../images/navi_icon.png);
+}
+#menu-input:checked ~ .navbar-collapse{
+  display: block;
+}
+  #mainVisualSlide {
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 45vw;
+  overflow: hidden;
+  position: relative;
+}
+#mainVisualSlide li{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+#mainVisualSlide li:nth-child(1){
+  background-image: url(../../images/mainVisual1.jpg);
+  background-size: cover;
+  animation: slideAnime 20s linear 0s infinite;
+}
+#mainVisualSlide li:nth-child(2){
+  background-image: url(../../images/mainVisual02.jpg);
+  background-size: cover;
+  animation: slideAnime 20s linear 5s infinite;
+}
+#mainVisualSlide li:nth-child(3){
+  background-image: url(../../images/mainVisual03.jpg);
+  background-size: cover;
+  animation: slideAnime 20s linear 10s infinite;
+}
+#mainVisualSlide li:nth-child(4){
+  background-image: url(../../images/mainVisual04.jpg);
+  background-size: cover;
+  animation: slideAnime 20s linear 15s infinite;
+}
+
+/*フッター*/
+  #footerTop {
+  width:100%;
+  background-color: #8283f7;
+  height: 20px;
+  margin-top: 10px; 
+}
+#footerTop p {
+  color: #ffffff;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px; 
+}
+footer {
+  width:100%;
+  height: 100%;
+  background-color: #d7d7c8;
+  margin-top: 10px; 
+}
+#footerLeft {
+  width:40%;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-top:30px;
+  margin-bottom:30px;
+}
+#footerLeft img{
+  margin-bottom:5px;	
+}
+#footerLeft p {
+	text-align: center;
+}
+#footerRight {
+	width:100%;
+	height:100%;
+    background-color: #9b8c7d;
+	padding: 10px;
+}
+	#footer li {
+		color: #fff;
+	}
+#footerRight li a{
+	display:block;
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+	text-align: left;
+}
+/*mainContents*/
+  .MainContents {
+    width:100px;
+    height: 30px;
+    margin-right: auto;
+    margin-left: auto; 
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+	#about1,#about2,#about3{
+		margin: 0 0 10px 0;
+	}
+#aboutSubtitle1 ,#aboutSubtitle2,#aboutSubtitle3{
+  width: 200px;
+  font-size: 12pt;
+  background-color: #9b8c7d;
+  padding:5px;
+  color:#ffffff;
+  display: block;
+  margin: 5px 0; 
+}
+#mainAbout {
+  width:80%;
+  margin-left:auto;
+  margin-right:auto; 
+}
+	#mainMenu {
+		width:100%;
+		height:100%;
+		padding: 10px 5px;
+		background-color:#d7d7c8; 
+	}
+	#mainMenu ul {
+		width:80%;
+		margin-left:auto;
+		margin-right: auto;
+	}
+	#mainMenu ul li {
+	 width:30%;
+	 float:left;
+	 margin:3px;
+	}
+	#mainMenu ul li h3 {
+		text-align: center;
+		font-size:10px;
+		margin: 3px 0;
+	}
+	#mainMenu ul li p {
+	font-size:8px;
+	}
+/*メニューページ*/
+	#contents_menu {
+		overflow: hidden;
+	}
+	#contents_menu ul {
+		width:80%;
+		height:100%;
+	    margin-left: auto;
+		margin-right:auto;
+		box-sizing: content-box;
+	}
+	#contents_menu ul li {
+		width:20%;
+		float:left;
+	    margin: 10px 5px;
+		
+	}
+	#contents_menu ul li p {
+		text-align: center;
+		font-size:10px;
+	}
+@keyframes slideAnime{
+  0%{opacity: 0;}
+  10%{opacity: 1;}
+  30%{opacity: 1;}
+  40%{opacity: 0;}
+  100%{opacity: 0;}
+}
+}

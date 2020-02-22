@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>マルヒ珈琲店</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(function(){
+    $(window).scroll(function (){
+        $('.fadein').each(function(){
+            var targetElement = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > targetElement - windowHeight + 200){
+                $(this).css('opacity','1');
+                $(this).css('transform','translateY(0)');
+            }
+        });
+    });
+});
+</script>
+<link href="common/css/style_pc.css" rel="stylesheet" type="text/css">
+<link href="common/css/style_sp.css" rel="stylesheet" type="text/css">
+<link href="common/css/reset.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header>
+		  <div id="headerTop">
+			  <h1 id="logo"><a href="#headerTop">
+				  <img src="common/images/MaruhiCoffee.png" alt="MaruhiCoffee"/></a>
+			  </h1>
+			  <div id="iconMap"><a href="#mainAccess">
+			  <img src="common/images/mapIcon.png" alt="アクセスボタン"/></a>
+			  </div>
+		  </div>
+		  <input id="menu-input" type="checkbox" class="hidden-pc">
+      	  <label id="menu-icon" for="menu-input" class="hidden-pc"></label>
+		  <nav class="navbar-collapse">
+				<ul>
+					<li id="gNavi1" ><a href="#headerTop">HOME</a></li>
+					<li id="gNavi2"><a href="#titleAbout" >ABOUT</a></li>
+					<li id="gNavi"><a href="#mainNews">NEWS</a></li>
+					<li id="gNavi4"><a href="menu/menu.html">MENU</a></li>
+				</ul>
+		   </nav>
+  </header>
+  <main>
+   <div id="mainVisual">
+        <ul id="mainVisualSlide">
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+    </ul>
+   </div>
+   <section id="mainAbout" class="fadein">
+			<h2 class="MainContents"><img src="images/title_about.png" alt="ABOUTマルヒ珈琲店とは"></h2>
+			<div id="about1" >
+				<img src="images/characteristic.jpg" alt="本好きのためのカフェ" id="aboutImg1"> 
+				<div id="about_sentence1">
+					<h3 id="aboutSubtitle1">本好きのためのカフェ</h3>
+					<p>本好きなマスターが、おすすめの本を集めました！その数なんと数100冊!!ジャンルは、小説や自己啓発まで様々。本をお持ちでなくても、ここに来れば読むことができます。</p>
+				</div>
+			</div>
+			<div id="about2">
+				<img src="images/coffeeHands.jpg" alt="こだわりを手ごろに" id="aboutImg2">
+				<div id="about_sentence2">
+					<h3 id="aboutSubtitle2">こだわりを手ごろに</h3>
+					<p>これまで約50年もの間、地域の方に愛され続けたこだわりの味を、一杯200円(学生は150円）という低価格で提供しております。マルヒブレンドは、後味までまろやかに仕上げているので、飲みやすいとご好評をいただいております。</p>
+				</div>
+			</div>
+			<div id="about3">
+				<img src="images/wifi.jpg" alt="wifi" id="aboutImg3">
+				<div id="about_sentence3">
+					<h3 id="aboutSubtitle3">快適な空間をあなたに</h3>
+					<p>リニューアルにともない、FREE WiFiを導入しました！また充電席もご用意ございます。レポート作成やゼミの集まり、勉強などにぜひご利用ください。</p>
+				</div>
+			</div>
+		</section>
+		<section id="mainMenu">
+			<h2 class="MainContents"><img src="common/images/title_menu.png"alt="Menuメニュー"></h2>
+			<ul>
+				<li>
+					<img src="common/images/coffee.jpg" alt="マルヒブレンドコーヒー"/>
+					<div id="top_menu1">
+						<h3>マルヒブレンド</h3>
+						<p>マルヒといえば、こちら！口当たりがまろやかで、「コーヒーが苦手な方でも楽しめるコーヒー」として親しまれています。</p>
+					</div>
+				</li>
+				<li>
+					<img src="common/images/juice.jpg" alt="フレッシュジュース"/> 
+					<div id="top_menu2">
+						<h3>フレッシュジュース</h3>
+						<p>地域でその日採れた果物をジュースにして、日替わりで提供しています。</p>
+						<p>種類はTwitterやInstagramで確認できます。</p>
+					</div>
+				</li>
+				<li>
+					<img src="common/images/donuts.jpg" alt="ドーナツ"/> 
+					<div id="top_menu3">
+						<h3>マルヒ特製ドーナツ</h3>
+						<p>老若男女問わず人気なドーナツ！腹持ちもGoodです。こちらも材料にこだわったて手づくりです。</p>
+					</div>
+				</li>
+			</ul>
+			<a href="./menu/menu.html"><img src="images/more.png" alt="メニュー詳細" id="moreMenu"> </a>
+		</section>
+		
+		<section id="mainNews">
+			<h2 class="MainContents"><img src="images/title_news.png" alt="NEWSニュース"></h2>
+			<table>
+				<tr>
+					<td>20XX年6月22日</td>
+					<td>お店の本の数を増やしました！</td>
+				</tr>
+				<tr>
+					<td>20XX年5月5日</td>
+					<td>商店街のイベントに参加しました！</td>
+				</tr>
+				<tr>
+					<td>20XX年4月20日</td>
+					<td>当店がメディアに取り上げられました！</td>
+				</tr>
+			</table>
+		</section>
+		<section id="mainAccess">
+      		<h2 class="MainContents"><img src="images/title_access.png" alt="アクセス"/></h2>
+      		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d816.0393345328446!2d139.07701132936094!3d35.10278189999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019be6371e5a083%3A0x66ef0de42b41ce7!2z54ax5rW36aeF5YmN5bmz5ZKM6YCa44KK5ZWG5bqX6KGX!5e0!3m2!1sja!2sjp!4v1580199635665!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""id="googleMap"></iframe>
+      <div id="adress">
+        <p>〒000-0000 ●●県●●市●●-●●</p>
+        <p>××線▼▼駅下車7分　●●商店街内にあります</p>
+      </div>
+		</section>
+	</main>
+	<footer>
+		<div id="footerTop">
+        	<p>&copy; 20XX Maruhi Coffee</p>
+      	</div>
+		<div id="footerInner">
+      		<div id="footerLeft">
+        		<img src="common/images/mugCup.png" alt="マルヒ珈琲店ロゴ"/>
+        		<p>営業時間 9:00-20:00</p>
+        		<p>定休日　日曜日</p>
+        		<p>TEL:55-5555-5555</p>
+        		<p>FAX:55-5555-5556</p>
+      		</div>
+      		<div id="footerRight">
+        		<ul>
+          			<li><a href="#mainAbout">マルヒ珈琲店とは</a></li>
+          			<li><a href="./menu/menu.html">メニュー</a></li>
+          			<li><a href="mainNews">お知らせ</a></li>
+          			<li><a href="mainAccess">アクセス</a></li>
+        		</ul>
+      		</div>
+    	</div>
+	</footer>
+</body>
+</html>
